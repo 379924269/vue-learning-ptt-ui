@@ -41,6 +41,12 @@ yarn add vuex
 yarn add axios
 ~~~~
 
+* yarn
+
+```
+yarn add vee-validate
+```
+
 
 
 
@@ -64,3 +70,5 @@ yarn add axios
 https://babeljs.io/docs/en/learn
 
 * 注意库要提前import引入，不然编写代码没有提示, 引入前用yard add libxxx  
+
+* vee-validate 参考别人的是2.2.3，但是现在是3.2.1  用法不知道是不是一样的，需要看看(https://logaretm.github.io/vee-validate/overview.html)。
