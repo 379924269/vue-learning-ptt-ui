@@ -72,3 +72,6 @@ https://babeljs.io/docs/en/learn
 * 注意库要提前import引入，不然编写代码没有提示, 引入前用yard add libxxx  
 
 * vee-validate 参考别人的是2.2.3，但是现在是3.2.1  用法不知道是不是一样的，需要看看(https://logaretm.github.io/vee-validate/overview.html)。
+
+###一般项目要考虑的：
+http请求（前后连接）、登录超时操作、路由、全局参数配置
