@@ -3,6 +3,9 @@
 ### 项目简介：用一两句话简单描述该项目所实现的业务功能
 调用后端接口，对后端数据进行curd操作
 
+### 参考项目地址：
+https://github.com/ggwork/book.git
+
 ### 技术选型：列出项目的技术栈，包括语言、框架和中间件等
 * Vue.js + Element-ui
 * Vuex 
