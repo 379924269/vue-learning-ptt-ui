@@ -5,6 +5,9 @@ Mock.mock('/login', 'post', (options) => {
   let data = JSON.parse(options.body)
   let name = data.name
   let password = data.password
+
+  console.log('login back')
+
   if (name === 'admin' && password === 'admin') {
     return {
       status: 1,

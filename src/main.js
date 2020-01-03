@@ -19,17 +19,7 @@ import './mock.js'
 import store from '@/store'
 import Cookie from 'js-cookie'
 // 引入表单验证
-import VeeValidate, {Validator} from 'vee-validate'
-
-// 汉化表单验证
-import zhCN from 'vee-validate/dist/locale/zh_CN'
-
-Validator.localize('zh_CN',
-  zhCN)
-
-Vue.use(VeeValidate, {
-  fieldsBagName: 'vee-fields'
-})
+import './view/vee-validate.js'
 
 Vue.use(ElementUI)
 
@@ -54,10 +44,12 @@ router.beforeEach((to, from, next) => {
 router.afterEach(() => {
 })
 
+// TODO 注意这里引入store 不然别的地方调用会出错
 /* eslint-disable no-new */
 new Vue({
   el: '#app',
   router,
+  store,
   components: {App},
   template: '<App/>'
 })

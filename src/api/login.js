@@ -1,9 +1,7 @@
-import httpClient from 'config'
-
+import service from './config'
 class Login {
   submit (params) {
-    httpClient.post('/login', params)
+    return service.post('/login', params)
   }
 }
-
 export default new Login()

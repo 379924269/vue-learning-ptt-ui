@@ -7,9 +7,9 @@
 * Vue.js + Element-ui
 * Vuex 
 
-* vue参考地址：https://cn.vuejs.org/v2/api
-* Element参考地址：https://element.eleme.cn/#/zh-CN/component/installation
-* Vuex参考地址：https://vuex.vuejs.org/zh/guide/
+* vue参考地址：[https://cn.vuejs.org/v2/api][vue参考地址]
+* Element参考地址：[https://element.eleme.cn/#/zh-CN/component/installation][element参考地址]
+* Vuex参考地址：[https://vuex.vuejs.org/zh/guide/][vuex参考地址]
 
 ### 本地构建：列出本地开发过程中所用到的工具命令；
 * yarn构建项目：
@@ -75,3 +75,30 @@ https://babeljs.io/docs/en/learn
 
 ###一般项目要考虑的：
 http请求（前后连接）、登录超时操作、路由、全局参数配置
+
+### vue.js 的一些缩写和名称意思
+
+* 指令缩写
+````
+： -->  v-bind 的缩写
+：xxx="xx" 相当于给子组件赋值，xxx必须在自主检的prop里面声明
+
+@  -->  v-on 的缩写
+#  -->  v-solt 的缩写
+````
+
+
+[element]: https://element.eleme.cn/#/zh-CN/component/installation
+
+[vue参考地址]: https://cn.vuejs.org/v2/api
+
+
+[vuex参考地址]: https://vuex.vuejs.org/zh/guide/
+
+###完美解决Webstorm不支持nodejs等语法提示和补全,参考地址：
+https://blog.csdn.net/Dobility/article/details/87563057
+
+
+### 引用路径问题：
+* “ ./ ”  点反斜杠引用当前目录下的文件
+* “ ../ ” 点点反斜杠引用其他目录下的文件

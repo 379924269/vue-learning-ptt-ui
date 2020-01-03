@@ -15,6 +15,7 @@
 </template>
 
 <script>
+import login from '../api/login.js'
 export default {
   name: 'Login',
   data () {
@@ -35,6 +36,16 @@ export default {
   },
   methods: {
     onSubmit () {
+      console.log('submit')
+      login.submit(this.form).then(value => {
+        if (value.data.status) {
+          // TODO router路由跳转例子
+          this.$store.commit('loginIn', this.form.name)
+          this.$router.push('/refactiredForm')
+        } else {
+          this.$message.error('用户名或密码错误')
+        }
+      })
     }
   }
 }
