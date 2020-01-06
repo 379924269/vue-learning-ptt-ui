@@ -1,12 +1,10 @@
 <template>
-    <div>
-        <div>这里是index</div>
-    </div>
+    <el-header>header</el-header>
 </template>
 
 <script>
 export default {
-  name: 'Index'
+  name: 'Header'
 }
 </script>
 

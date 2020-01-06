@@ -1,12 +1,10 @@
 <template>
-    <div>
-        <div>这里是index</div>
-    </div>
+    <el-aside width="200px">aside</el-aside>
 </template>
 
 <script>
 export default {
-  name: 'Index'
+  name: 'Aside'
 }
 </script>
 

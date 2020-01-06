@@ -1,15 +1,14 @@
 <template>
     <div>
-        <div>这里是index</div>
+        {{content}}
     </div>
 </template>
 
 <script>
 export default {
-  name: 'Index'
+  name: '404',
+  data: () => ({
+    content: '404'
+  })
 }
 </script>
-
-<style scoped>
-
-</style>

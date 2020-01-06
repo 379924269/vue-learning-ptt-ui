@@ -1,37 +1,35 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 import Login from '@/view/Login'
-import Index from '@/view/Index'
-import Detail from '@/view/Detail'
-import RefactiredForm from '@/view/RefactiredForm'
+import Layout from '../layout/Layout.vue'
 
 Vue.use(Router)
 
 export default new Router({
   routes: [
     {
-      path: '/',
-      redirect: '/Index'
-    },
-    {
       path: '/login',
       name: 'Login',
       component: Login
     },
     {
-      path: '/index',
-      name: 'Index',
-      component: Index
+      path: '/',
+      redirect: '/index',
+      component: Layout,
+      children: [
+        {
+          path: 'index',
+          component: () => import('../view/Index.vue'),
+          meta: {
+            title: 'Index'
+          }
+        }
+      ]
     },
     {
-      path: '/detail',
-      name: 'Detail',
-      component: Detail
-    },
-    {
-      path: '/refactiredForm',
-      name: 'RefactiredForm',
-      component: RefactiredForm
+      path: '*',
+      name: '404',
+      component: () => import('../components/404.vue')
     }
   ]
 })
