@@ -5,6 +5,10 @@ import Layout from '../layout/Layout.vue'
 
 Vue.use(Router)
 
+export const menus = [
+
+]
+
 export default new Router({
   routes: [
     {
@@ -14,14 +18,14 @@ export default new Router({
     },
     {
       path: '/',
-      redirect: '/index',
+      redirect: '/home',
       component: Layout,
       children: [
         {
-          path: 'index',
-          component: () => import('../view/Index.vue'),
+          path: '/home',
+          component: () => import('../view/Home.vue'),
           meta: {
-            title: 'Index'
+            title: '主页'
           }
         }
       ]

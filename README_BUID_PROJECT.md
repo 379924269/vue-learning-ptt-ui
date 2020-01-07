@@ -3,16 +3,16 @@
 ### 项目简介：用一两句话简单描述该项目所实现的业务功能
 调用后端接口，对后端数据进行curd操作
 
-### 参考项目地址：
-https://github.com/ggwork/book.git
+### [参考项目地址](https://github.com/ggwork/book.git)
 
 ### 技术选型：列出项目的技术栈，包括语言、框架和中间件等
 * Vue.js + Element-ui
 * Vuex 
 
-* vue参考地址：[https://cn.vuejs.org/v2/api][vue参考地址]
-* Element参考地址：[https://element.eleme.cn/#/zh-CN/component/installation][element参考地址]
-* Vuex参考地址：[https://vuex.vuejs.org/zh/guide/][vuex参考地址]
+* [vue参考地址](https://cn.vuejs.org/v2/api)
+* [element参考地址](https://element.eleme.cn/#/zh-CN/component/installation)
+* [vuex参考地址](https://vuex.vuejs.org/zh/guide/)
+* [vue-router参考地址](https://router.vuejs.org/) 
 
 ### 本地构建：列出本地开发过程中所用到的工具命令；
 * yarn构建项目：
@@ -69,12 +69,11 @@ yarn add vee-validate
 
 ### FAQ：开发过程中常见问题的解答。
 
-* 不，了解es2015，参考地址：
-https://babeljs.io/docs/en/learn
+* [es2015参考地址](https://babeljs.io/docs/en/learn)
 
 * 注意库要提前import引入，不然编写代码没有提示, 引入前用yard add libxxx  
 
-* vee-validate 参考别人的是2.2.3，但是现在是3.2.1  用法不知道是不是一样的，需要看看(https://logaretm.github.io/vee-validate/overview.html)。
+* vee-validate 参考别人的是2.2.3，但是现在是3.2.1  用法不知道是不是一样的，[vee-validate参考地址](https://logaretm.github.io/vee-validate/overview.html)
 
 ###一般项目要考虑的：
 http请求（前后连接）、登录超时操作、路由、全局参数配置
@@ -90,17 +89,13 @@ http请求（前后连接）、登录超时操作、路由、全局参数配置
 #  -->  v-solt 的缩写
 ````
 
+[element-ui参考地址](https://element.eleme.cn/#/zh-CN/component/installation)
 
-[element]: https://element.eleme.cn/#/zh-CN/component/installation
+[vue参考地址](https://cn.vuejs.org/v2/api)
 
-[vue参考地址]: https://cn.vuejs.org/v2/api
+[vuex参考地址](https://vuex.vuejs.org/zh/guide/)
 
-
-[vuex参考地址]: https://vuex.vuejs.org/zh/guide/
-
-###完美解决Webstorm不支持nodejs等语法提示和补全,参考地址：
-https://blog.csdn.net/Dobility/article/details/87563057
-
+###完美解决Webstorm不支持nodejs等语法提示和补全,[参考地址](https://blog.csdn.net/Dobility/article/details/87563057)
 
 ### 引用路径问题：
 * “ ./ ”  点反斜杠引用当前目录下的文件

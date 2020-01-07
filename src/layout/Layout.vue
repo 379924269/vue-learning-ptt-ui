@@ -2,9 +2,13 @@
     <el-container class="container">
         <el-header>Header</el-header>
         <el-container>
-            <el-aside width="200px">Aside</el-aside>
+            <Aside></Aside>
             <el-container>
-                <el-main>Main</el-main>
+                <el-main>
+                    <transition name="main" mode="out-in">
+                        <router-view></router-view>
+                    </transition>
+                </el-main>
                 <el-footer>Footer</el-footer>
             </el-container>
         </el-container>
