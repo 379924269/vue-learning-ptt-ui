@@ -1,0 +1,35 @@
+## 技术详细介绍
+这个只是搜索到的文档，还有更多详细的文档可以自己去搜索下.
+### vue.js  
+&emsp;&emsp;**vuejs**是一套用于构建用户界面的渐进式框架。与其它大型框架不同的是，Vue 被设计为可以自底向上逐层应用。Vue 的核心库只关注视图层，不仅易于上手，还便于与第三方库或既有项目整合。另一方面，当与现代化的工具链以及各种支持类库结合使用时，Vue 也完全能够为复杂的单页应用提供驱动。  
+官网[vue教程](https://cn.vuejs.org/v2/guide/)  
+
+### element-ui  
+&emsp;&emsp;网站快速成型工具Element，一套为开发者、设计师和产品经理准备的基于 Vue 2.0 的桌面端组件库  
+官网[element教程](https://element.eleme.cn/#/zh-CN/component/installation)
+
+### cookie.js  
+&emsp;&emsp;js-cookie插件是一个JS操作cookie的插件，源文件只有3.34 KB，非常轻量级，js-cookie也支持npm和Bower安装和管理
+github[文档](https://github.com/js-cookie/js-cookie/tree/latest#readme)
+
+### axios  
+&emsp;&emsp;Axios 是一个基于 promise 的 HTTP 库，可以用在浏览器和 node.js 中。中文[文档](http://www.axios-js.com/zh-cn/docs/)
+
+### mockjs  
+&emsp;&emsp;生成随机数拦截ajax请求，[参考文档](http://mockjs.com/)
+
+### vee-validate
+&emsp;&emsp;表单验证,[参考文档](https://logaretm.github.io/vee-validate/overview.html#getting-started)
+
+### vue-router
+&emsp;&emsp;Vue Router 是 Vue.js 官方的路由管理器。它和 Vue.js 的核心深度集成，让构建单页面应用变得易如反掌。
+[教程](https://router.vuejs.org/zh/)
+
+### vuex
+&emsp;&emsp;Vuex 是一个专为 Vue.js 应用程序开发的状态管理模式
+[教程](https://vuex.vuejs.org/zh/)
+
+### promise
+&emsp;&emsp;Promise 对象用于表示一个异步操作的最终完成 (或失败), 及其结果值.
+[文档](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Promise)
+[简述](https://www.jianshu.com/p/1b63a13c2701)

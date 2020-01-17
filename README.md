@@ -1,30 +1,26 @@
-# vue-learning-ptt-ui
+## vue-learning-ptt-ui
+通过vue.js + element-ui实现前端的一些通用的功能。  
+项目的工作原理可查看[guide](http://vuejs-templates.github.io/webpack/) 
+和[docs for vue-loader](http://vuejs.github.io/vue-loader).  
+参考github [项目1](https://github.com/PanJiaChen/vue-element-admin.git)、[项目2](https://github.com/ggwork/book.git)
 
-> A Vue.js project
 
-## Build Setup
+### 技术选型：
+* axios:  0.19.0 
+* element-ui:  2.13.0 
+* js-cookie:  2.2.1 
+* mockjs:  1.1.0 
+* normalize.css:  8.0.1 
+* vee-validate:  3.2.1 
+* vue:  2.5.2 
+* vue-router:  3.0.1 
+* vuex:  3.1.2
+* promise  
+  
+  技术的详细信息和参考文档[链接](./doc/TECHNOLOGY_INTRODUCTION.md)  
+  其他[技术推荐](./doc/TECHNICAL_RECOMMDENDATION.md)看看  
+  `基础`[技术推荐](./doc/BASIC_TECHNOLOGY.md)看看
+  
+### 项目构建
 
-``` bash
-# install dependencies
-npm install
-
-# serve with hot reload at localhost:8080
-npm run dev
-
-# build for production with minification
-npm run build
-
-# build for production and view the bundle analyzer report
-npm run build --report
-
-# run unit tests
-npm run unit
-
-# run e2e tests
-npm run e2e
-
-# run all tests
-npm test
-```
-
-For a detailed explanation on how things work, check out the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
+### FAQ：
