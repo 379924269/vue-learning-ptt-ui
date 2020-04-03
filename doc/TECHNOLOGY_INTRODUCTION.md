@@ -1,15 +1,13 @@
 ## 技术详细介绍
 这个只是搜索到的文档，还有更多详细的文档可以自己去搜索下.
 ### vue.js  
-&emsp;&emsp;**vuejs**是一套用于构建用户界面的渐进式框架。与其它大型框架不同的是，Vue 被设计为可以自底向上逐层应用。Vue 的核心库只关注视图层，不仅易于上手，还便于与第三方库或既有项目整合。另一方面，当与现代化的工具链以及各种支持类库结合使用时，Vue 也完全能够为复杂的单页应用提供驱动。  
-官网[vue教程](https://cn.vuejs.org/v2/guide/)  
+&emsp;&emsp;**vuejs**是一套用于构建用户界面的渐进式框架，[官网vue教程](https://cn.vuejs.org/v2/guide/)  
 
 ### element-ui  
-&emsp;&emsp;网站快速成型工具Element，一套为开发者、设计师和产品经理准备的基于 Vue 2.0 的桌面端组件库  
-官网[element教程](https://element.eleme.cn/#/zh-CN/component/installation)
+&emsp;&emsp;网站快速成型工具Element，一套为开发者、设计师和产品经理准备的基于 Vue 2.0 的桌面端组件库，[官网element教程](https://element.eleme.cn/#/zh-CN/component/installation)
 
 ### cookie.js  
-&emsp;&emsp;js-cookie插件是一个JS操作cookie的插件，源文件只有3.34 KB，非常轻量级，js-cookie也支持npm和Bower安装和管理
+&emsp;&emsp;js-cookie插件是一个JS操作cookie的插件，源文件只有3.34 KB，非常轻量级.
 github[文档](https://github.com/js-cookie/js-cookie/tree/latest#readme)
 
 ### axios  
@@ -32,4 +30,4 @@ github[文档](https://github.com/js-cookie/js-cookie/tree/latest#readme)
 ### promise
 &emsp;&emsp;Promise 对象用于表示一个异步操作的最终完成 (或失败), 及其结果值.
 [文档](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Promise)
-[简述](https://www.jianshu.com/p/1b63a13c2701)
+、[简述](https://www.jianshu.com/p/1b63a13c2701)
