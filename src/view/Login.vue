@@ -3,8 +3,8 @@
         <el-form ref="form" :model="form" :rules="rules" label-position="left" label-width="0px"
                  class="demo-ruleForm login-page">
             <h3 class="title">系统登录</h3>
-            <el-form-item required prop="name">
-                <el-input v-model="form.name" itemprop=""></el-input>
+            <el-form-item>
+                <el-input v-model="form.username" itemprop=""></el-input>
             </el-form-item>
             <el-form-item required prop="password">
                 <el-input v-model="form.password"></el-input>
@@ -28,7 +28,7 @@ export default {
   data () {
     return {
       form: {
-        name: '',
+        username: '',
         password: ''
       },
       rules: {
@@ -38,7 +38,8 @@ export default {
         password: [
           {required: true, message: '不能为空', trigger: 'blur'}
         ]
-      }
+      },
+      checked: true
     }
   },
   methods: {
@@ -47,7 +48,7 @@ export default {
       login.submit(this.form).then(value => {
         if (value.data.status) {
           // TODO router路由跳转例子
-          this.$store.commit('loginIn', this.form.name)
+          this.$store.commit('loginIn', this.form.username)
           this.$router.push('/')
         } else {
           this.$message.error('用户名或密码错误')

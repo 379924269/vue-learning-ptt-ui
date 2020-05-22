@@ -1,64 +1,42 @@
 <template>
-    <el-container class="container">
-        <el-header>Header</el-header>
-        <el-container>
+    <div>
+        <el-container style="height: 500px; border: 1px solid #eee">
             <Aside></Aside>
-            <el-container>
-                <el-main>
-                    <transition name="main" mode="out-in">
-                        <router-view></router-view>
-                    </transition>
-                </el-main>
-                <el-footer>Footer</el-footer>
-            </el-container>
+            <center-content></center-content>
         </el-container>
-    </el-container>
+    </div>
 </template>
 
 <script>
 import Aside from '@/layout/Aside'
-import Header from '@/layout/Header'
+import CenterContent from '@/layout/CenterContent'
 export default {
   name: 'Layout',
-  components: {Header, Aside}
+  components: {CenterContent, Aside},
+  data () {
+    return {
+      tableData: Array(20).fill(this.item)
+    }
+  },
+  props: {
+    item: [{
+      date: 'xx',
+      name: 'mm',
+      address: 'xxx'
+    }]
+  }
 }
+
 </script>
 
-<style scoped>
-    .el-header, .el-footer {
+<style>
+    .el-header {
         background-color: #B3C0D1;
         color: #333;
-        text-align: center;
         line-height: 60px;
     }
-
     .el-aside {
-        background-color: #D3DCE6;
         color: #333;
-        text-align: center;
-        line-height: 200px;
     }
 
-    .el-main {
-        background-color: #E9EEF3;
-        color: #333;
-        text-align: center;
-        line-height: 160px;
-    }
-
-    body > .el-container {
-        margin-bottom: 40px;
-    }
-
-    .el-container:nth-child(5) .el-aside,
-    .el-container:nth-child(6) .el-aside {
-        line-height: 260px;
-    }
-
-    .el-container:nth-child(7) .el-aside {
-        line-height: 320px;
-    }
-    .container {
-        height: 100%;
-    }
 </style>
