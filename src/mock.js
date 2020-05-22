@@ -1,9 +1,9 @@
 import Mock from 'mockjs'
 
 Mock.mock('/login', 'post', (options) => {
-  // console.log('options:', options)
+  console.log('options:', options)
   let data = JSON.parse(options.body)
-  let name = data.name
+  let name = data.username
   let password = data.password
 
   console.log('login back')

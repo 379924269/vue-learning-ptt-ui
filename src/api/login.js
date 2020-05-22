@@ -1,7 +1,8 @@
 import service from './config'
-class Login {
+import pathConst from '@/constant/pathConst'
+
+export default{
   submit (params) {
-    return service.post('http://192.168.0.160:8082/login', params)
+    return service.post(pathConst.getBaseUrl() + '/login', params)
   }
 }
-export default new Login()

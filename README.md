@@ -4,9 +4,17 @@
 ### 项目相关文档
 * [本项目所有技术参考文档](./doc/TECHNOLOGY_INTRODUCTION.md)  
 * [vue中的名称规则](doc/NAME_SPECIFICATION.md)
-* [前段技术推荐](./doc/TECHNICAL_RECOMMDENDATION.md)看看  
+* [前端技术推荐](./doc/TECHNICAL_RECOMMDENDATION.md) 
 
 * [基础技术推荐](./doc/BASIC_TECHNOLOGY.md)看看
+
+### vue常用验证参考
+* [vuejs 简单的官方验证](https://cn.vuejs.org/v2/guide/components-props.html#Prop-%E9%AA%8C%E8%AF%81)
+* [elementui form 验证](https://element.eleme.cn/#/zh-CN/component/form)
+
+    * [1、常见自定义验证信息参考](https://www.jianshu.com/p/8f1f8b5aa8a1)看看
+    * [2、常见自定义验证信息参考](https://www.cnblogs.com/wgy0528/p/11866000.html)
+    * [3、常见自定义验证信息参考](https://www.cnblogs.com/lieone/p/11856330.html)
   
 ### 项目的工作原理参考
 * [guide](http://vuejs-templates.github.io/webpack/)
@@ -51,3 +59,4 @@ export default {
 #### 主键（component）调用
 
 ### FAQ：
+1、[Node中没搞明白require和import，你会被坑的很惨](https://imweb.io/topic/582293894067ce9726778be9)
