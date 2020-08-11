@@ -1,62 +1,49 @@
-## vue-learning-ptt-ui
-通过vue.js + element-ui实现前端的一些通用的功能。  
+# vue-learning-ptt-ui
 
-### 项目相关文档
-* [本项目所有技术参考文档](./doc/TECHNOLOGY_INTRODUCTION.md)  
-* [vue中的名称规则](doc/NAME_SPECIFICATION.md)
-* [前端技术推荐](./doc/TECHNICAL_RECOMMDENDATION.md) 
+调用后端接口，对后端数据进行curd操作
 
-* [基础技术推荐](./doc/BASIC_TECHNOLOGY.md)看看
+### 项目学习文档
+[我的文档地址](doc/项目学习文档.md)
 
-### vue常用验证参考
-* [vuejs 简单的官方验证](https://cn.vuejs.org/v2/guide/components-props.html#Prop-%E9%AA%8C%E8%AF%81)
-* [elementui form 验证](https://element.eleme.cn/#/zh-CN/component/form)
+### 技术选型：[文档简单介绍](doc/文档简单介绍.md)
+- axios:  0.19.0 [发送请求] 
+- element-ui:  2.13.0  [前段界面]
+- js-cookie:  2.2.1  [操作cookie]
+- mockjs:  1.1.0  [前段测试]
+- normalize.css:  8.0.1 
+- vee-validate:  3.2.1 [vue 验证框架] 
+- vue:  2.5.2 
+- vue-router:  3.0.1 [vue 路由]
+- vuex:  3.1.2
+- promise  
 
-    * [1、常见自定义验证信息参考](https://www.jianshu.com/p/8f1f8b5aa8a1)看看
-    * [2、常见自定义验证信息参考](https://www.cnblogs.com/wgy0528/p/11866000.html)
-    * [3、常见自定义验证信息参考](https://www.cnblogs.com/lieone/p/11856330.html)
-  
-### 项目的工作原理参考
-* [guide](http://vuejs-templates.github.io/webpack/)
-* [docs for vue-loader](http://vuejs.github.io/vue-loader)  
-  
-   
-### 参考的github项目 
-* [参考项目1](https://github.com/PanJiaChen/vue-element-admin.git)
-* [参考项目2](https://github.com/ggwork/book.git)
+### 常用指令缩理解
+
+- 冒号(:)
+    - 冒号(：)是绑定(v-bind)的缩写, :xxx="xx" 相当于给子组件赋值，xxx必须在自主检的prop里面声明
+
+- 艾特（@）
+    - 艾特（@）是v-on 的缩写
+    
+- 井号（#）   
+    - 井号（#）v-solt 的缩写
+
+### yarn构建项目：
+感觉cnpm还是蛮快的，所以去掉了yarn
+
+### 前段项目一般要做的：
+http请求（前后连接）、登录超时操作、路由、全局参数配置
+
+### FAQ：开发过程中常见问题的解答。
+- vee-validate 参考别人的是2.2.3，但是现在是3.2.1  用法不知道是不是一样的，[vee-validate参考地址](https://logaretm.github.io/vee-validate/overview.html)
 
 
-### 技术选型：
-* axios:  0.19.0 [发送请求] 
-* element-ui:  2.13.0  [前段界面]
-* js-cookie:  2.2.1  [操作cookie]
-* mockjs:  1.1.0  [前段测试]
-* normalize.css:  8.0.1 
-* vee-validate:  3.2.1 [vue 验证框架] 
-* vue:  2.5.2 
-* vue-router:  3.0.1 [vue 路由]
-* vuex:  3.1.2
-* promise  
-  
-### 项目构建
+- 完美解决Webstorm不支持nodejs等语法提示和补全
+    - 处理[参考地址](https://blog.csdn.net/Dobility/article/details/87563057)
 
-### 注意:
-#### 这些属性的定义、用法、写法：
-name、data、props、method等很多属性，要了解，干什么用的
-````
-export default {
-  name: 'Layout',
-  data () {
-    return {
-      tableData: Array(20).fill(this.item)
-    }
-  },
-  props: {
-  }
-}
-````
+- 引用路径问题：
+    - “ ./ ”  点反斜杠引用当前目录下的文件
+    - “ ../ ” 点点反斜杠引用其他目录下的文件
 
-#### 主键（component）调用
-
-### FAQ：
-1、[Node中没搞明白require和import，你会被坑的很惨](https://imweb.io/topic/582293894067ce9726778be9)
+- 组件的映入问题
+可以直接在<templete>中写组件他会自动引入
